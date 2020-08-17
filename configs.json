@@ -1,12 +1,11 @@
 {
 	"chembl": "./data/corpora/chembl23.smiles",
-	"uniprot": "./data/corpora/uniprot_all.txt",
 	"smiles_bpe": "./data/bpe/chembl23_20K",
 	"lingo2vec": "./data/embeddings/chembl_lingo_embeddings",
 	"bpe2vec": "./data/embeddings/chembl23_bpe_20K",
 	"prot2vec": "./data/embeddings/protVec",
 	"sb_bindingdb_path": "./data/sb_interactions_bindingdb.csv",
-	
+
 	"bdb_sb_threshold": 7,
 	"bdb_folds": "./data/bdb/train_folds/",
 	"bdb_train": "./data/bdb/train.csv",

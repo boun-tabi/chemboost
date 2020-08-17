@@ -51,22 +51,8 @@ def train_bpe_smilesvec(smiles_path, bpe_model_path, embeddings_path):
                                   embedding_dim=100, window_size=20, n_cpu=2)
     w2v_trainer.train()
 
-def train_protvec(prots_path, embeddings_path):
-    print('Reading proteins...')
-    with open(prots_path) as f:
-        seqs = [s.strip().split()[-1] for s in f.readlines()]
-
-    print('Tokenizing proteins')
-    tokenized_seqs = [[seq[i:i + 3] for i in range(0, len(seq), 3)] for seq in seqs]
-
-    print('Training word2vec with proteins')
-    w2v_trainer = Word2VecTrainer(tokenized_seqs, embeddings_path,
-                                  embedding_dim=100, window_size=20, n_cpu=2)
-    w2v_trainer.train()
-
 
 with open('configs.json') as f:
     configs = json.load(f)
 
 # train_bpe_smilesvec(configs['chembl'], configs['smiles_bpe'], configs['bpe2vec'])
-train_protvec(configs['uniprot'], configs['prot2vec'])
