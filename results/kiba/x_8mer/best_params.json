@@ -1,0 +1,1 @@
+{"random_state": 1, "n_jobs": 2, "tree_method": "hist", "eval_metric": "rmse", "subsample": 1, "min_child_weight": 10, "n_estimators": 2000, "learning_rate": 0.1, "objective": "reg:squarederror", "max_depth": 10, "colsample_bytree": 0.8}

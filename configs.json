@@ -1,0 +1,27 @@
+{
+	"chembl": "./data/corpora/chembl23.smiles",
+	"uniprot": "./data/corpora/uniprot_all.txt",
+	"smiles_bpe": "./data/bpe/chembl23_20K",
+	"lingo2vec": "./data/embeddings/chembl_lingo_embeddings",
+	"bpe2vec": "./data/embeddings/chembl23_bpe_20K",
+	"prot2vec": "./data/embeddings/protVec",
+	"sb_bindingdb_path": "./data/sb_interactions_bindingdb.csv",
+	
+	"bdb_sb_threshold": 7,
+	"bdb_folds": "./data/bdb/train_folds/",
+	"bdb_train": "./data/bdb/train.csv",
+	"bdb_test": "./data/bdb/test.csv",
+	"bdb_ligands": "./data/bdb/ligands.json",
+	"bdb_proteins": "./data/bdb/proteins.json",
+	"bdb_prot_sim": "./data/bdb/sw_sim_vectors.json",
+	"bdb_prot_sim_matrix": "./data/bdb/sw_sim_matrix.csv",
+
+	"kiba_sb_threshold": 12.1,
+	"kiba_folds": "./data/kiba/train_folds/",
+	"kiba_train": "./data/kiba/train.csv",
+	"kiba_test": "./data/kiba/test.csv",
+	"kiba_ligands": "./data/kiba/ligands.json",
+	"kiba_proteins": "./data/kiba/proteins.json",
+	"kiba_prot_sim": "./data/kiba/sw_sim_vectors.json",
+	"kiba_prot_sim_matrix": "./data/kiba/sw_sim_matrix.csv"
+}

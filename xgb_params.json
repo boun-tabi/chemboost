@@ -1,0 +1,14 @@
+{	
+	"fixed_params": {"random_state": 1, "n_jobs": 2, "tree_method": "hist", "eval_metric": "rmse", "subsample":1, "min_child_weight": 10},
+	"search_params": [
+		{
+			"n_estimators": [1750, 2000, 2250],
+			"learning_rate": [0.01, 0.05, 0.1, 0.2]
+		},
+		{
+			"objective": ["reg:squarederror", "reg:linear"],
+			"max_depth": [8, 10, 12],
+			"colsample_bytree": [0.8, 0.9, 1]			
+		}
+	]	
+}
